@@ -28,9 +28,9 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 
 ### To do
 
-composer self-update
-git clone https://github.com/mikunatalias/miku3.git
-cd laravel
-composer install
-.env
-
+composer self-update, 
+git clone https://github.com/mikunatalias/miku3.git , 
+cd laravel, 
+composer install, 
+.env, app_key=32, 
+добавление новой ветки branch1
