@@ -34,3 +34,4 @@ cd laravel,
 composer install, 
 .env, app_key=32, 
 добавление новой ветки branch1
+eeeeeeee
