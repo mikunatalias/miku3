@@ -33,4 +33,5 @@ git clone https://github.com/mikunatalias/miku3.git ,
 cd laravel, 
 composer install, 
 .env, app_key=32, 
-добавление новой ветки branch1
+добавление новой ветки branch1,
+add add add
