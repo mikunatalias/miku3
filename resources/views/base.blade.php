@@ -10,7 +10,9 @@
 	@show
 </head>
 <body>
+
 <div id="page">
+
 <div id="topwrap">
 	<div id="sidebar">
     	<div id="tmenu">
@@ -22,12 +24,9 @@
         <div id="company_name">CompanyName</div>
         <div id="menu">
         	<ul>
-            	<li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Instructors</a></li>
-                <li><a href="#">Our Clients</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Contacts</a></li>
+			@foreach($links as $key=>$value)
+			   	<li><a href='{{asset($value)}}'>{{$key}}</a></li>
+            @endforeach
         	</ul>
         </div></div>
 <div id="header"></div>

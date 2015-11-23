@@ -7,12 +7,10 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class BaseController extends Controller
+class FormController extends Controller
 {
+   
    public function getIndex($id=null){
-	//dd($this->metas);
-	return view('templates.index')->with('id',$id);
-	//withId($id)
-	//view('',array('id'=>$id))
-	}
+	return view('templates.form');
+}
 }
