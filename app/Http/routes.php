@@ -20,5 +20,8 @@ Route::get('user/profile/{id?}', array('uses'=>'UserController@getIndex'));
 Route::controller ('profile','UserController');
 Route::controllers(['profile'=>'UserController',
 'test'=>'TestController',
-'form'=>'FormController']);
+'form'=>'FormController',
+'base'=>'BaseController'
+]);
+
 Route::get('{id?}',['uses'=>'BaseController@getIndex']);
