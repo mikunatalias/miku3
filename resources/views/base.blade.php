@@ -11,6 +11,14 @@
 </head>
 <body>
 
+@if(Auth::check())
+	<a href="{{asset('auth/logout')}}">Выход</a>
+	<a href="{{asset('auth/home')}}">Кабинет</a>
+@else
+	<a href="{{asset('auth/login')}}">Вход </a>
+	<a href="{{asset('auth/register')}}">Регистрация </a>
+@endif
+
 <div id="page">
 
 <div id="topwrap">
@@ -38,9 +46,9 @@
 	</div>
 <div id="footer">
 	<div id="bottom_menu"><a href="#">Home Page</a> |  <a href="#">About Us</a> |  <a href="#">Our Clients</a> |  <a href="#">Testimonials</a>  |  <a href="#">Price List</a> |  <a href="#">Contact Details</a></div>
-    <div id="bottom_addr">� 2010 Basketball club. All Rights Reserved</div>
+    <div id="bottom_addr">© 2010 Basketball club. All Rights Reserved</div>
 </div>
 </div>
-<div style="position:absolute;left:-3072px;top:0" align="center"><a href="http://smarttop.info">������� ������</a> <a href="http://ds-webevent.com">������� ������</a></div>
+<div style="position:absolute;left:-3072px;top:0" align="center"><a href="http://smarttop.info">–ейтинг сайтов</a> <a href="http://ds-webevent.com">Ўаблоны сайтов</a></div>
 </body>
 </html>

@@ -10,7 +10,7 @@ use App\Miku;
 
 class BaseController extends Controller
 {
-   public function getIndex($id=null){
+   public function getIndex($id='index'){
 	//dd($this->metas);
 	//$text=Miku::find($id);
 	$text=Miku::where('url','=',$id)->first();
